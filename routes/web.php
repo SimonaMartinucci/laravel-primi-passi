@@ -26,11 +26,6 @@ Route::get('/about', function () {
 
     $title = 'About Laravel';
     $description = "Laravel è un framework PHP open-source per lo sviluppo di applicazioni web. Creato da Taylor Otwell, Laravel è progettato per facilitare la costruzione di applicazioni robuste e scalabili seguendo il paradigma di Model-View-Controller (MVC). Offre una serie di strumenti e funzionalità integrate che semplificano compiti comuni nello sviluppo web. Laravel è apprezzato per la sua eleganza, l'architettura moderna, e la facilità d'uso, il che lo rende una scelta popolare per sviluppatori di tutti i livelli.";
-    $prova = [
-        'name' => 'Simo',
-        'surname' => 'Martinucci',
-        'age' => 29,
-    ];
 
     return view('about', compact('title', 'description', 'prova'));
 });
