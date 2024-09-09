@@ -34,7 +34,8 @@
         </nav>
 
         <h1 class="my-5">{{ $title }}</h1>
-        <h3>{{ $subtitle }}</h3>
+        <h3 class="mb-4">Grazie {{ $user['name'] }} {{ $user['surname'] }}</h3>
+        <h5>{{ $user['message'] }}</h5>
 
     </div>
     

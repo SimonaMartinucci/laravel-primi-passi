@@ -8,9 +8,8 @@
     <title>laravel-primi-passi</title>
 </head>
 <body>
-
-    <div class="container my-4 p-5 text-center bg-danger-subtle">
-
+    
+    <div class="container my-4 p-5 bg-danger-subtle">
         <!-- barra navigazione -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -33,10 +32,20 @@
             </div>
         </nav>
 
-        <h1 class="my-5">{{ $title }}</h1>
-        <h3>{{ $subtitle }}</h3>
+        <h1 class="text-center my-5">{{ $title }}</h1>
 
+        <h5 class="mb-4">{{ $list_title }}</h5>
+
+        @if(count($list) > 0)
+            <ul>
+            @foreach($list as $item)
+                    <li>{{ $item }}</li>
+            @endforeach
+            </ul>
+        @else
+            <h6>Non ci sono liste da mostrare</h6>
+        @endif  
     </div>
-    
+
 </body>
 </html>

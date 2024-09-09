@@ -10,7 +10,6 @@
 <body>
 
     <div class="container my-4 p-5 text-center bg-danger-subtle">
-
         <!-- barra navigazione -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -34,9 +33,11 @@
         </nav>
 
         <h1 class="my-5">{{ $title }}</h1>
-        <h3>{{ $subtitle }}</h3>
+        <p>{{ $description }}</p>
 
     </div>
     
+
+
 </body>
 </html>
